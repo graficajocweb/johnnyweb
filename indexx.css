@@ -1,0 +1,163 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+	color: #202020;
+}
+/*Cards*/
+
+body{
+	background: linear-gradient(rgba(5, 7, 12, 0.377), rgba(5, 7, 12, 0.418)), url(img/fondo.jpeg);
+	background-position:  center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url(img/fondoprincipal.jpeg);
+}
+
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+	color: #000000;
+}
+.title-cards{
+	font-size: 25px;
+	max-width: 2080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+
+}
+/*tarjetas*/
+
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 22px;
+	overflow: hidden;	
+	/*sombra*/
+	box-shadow: 0px 1px 10px rgb(0, 0, 0);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+
+/*sobre derecho*/
+.card:hover{
+	box-shadow: 5px 5px 20px rgb(0, 0, 0);
+	transform: translateY(-3%);
+}
+
+/*imegen de tarjetas*/
+.card img{
+	width: 100%;
+	height: 210px;
+	/*imagen trasparente*/
+	opacity:0.700;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #000000;
+	border: #000000;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 5px;
+	border: #000000;
+}
+/*boton tarjetas*/
+.card .contenido-card a{
+	display: inline-block;
+	padding: 5px;
+	margin-top: 1px;
+	text-decoration: none;
+	border: 1px solid #000000;
+	border-radius: 12px;
+	transition: all 400ms ease;
+	margin-bottom: 1px;
+}
+.card .contenido-card a:hover{
+	color: #202020;
+}
+
+.org-21{
+	background-color: rgba(252, 17, 17, 0.562);
+}
+
+.org-22{
+	background-color: rgba(4, 199, 4, 0.637);
+}
+
+.diseñador{
+	background-color: rgb(192, 0, 250)
+}
+
+p,button{
+	border: #000000;
+    text-align: center;
+    font-size: 10px;
+    text-align: center;
+	color: #000000;
+	border: #000000;
+}
+
+/*boto de copiar*/
+
+button{ 
+    background-color: #000000b0;
+    color: #f1f1f1;
+    margin: 1px 0 10px 0;
+    padding: 5px 20px;
+	text-align: center;
+    margin-left: 5px;
+	/*border circular*/
+	border-radius: 10px;
+   
+}
+
+/*alertas mensaje*/
+
+#alert{
+    width: 90%;
+	font-size: 30px;
+    text-align: center;
+    background-color: #034b1bad;
+    color: #ffffff;
+	/*pocision fija*/
+    position: fixed;
+	/*fija*/
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    padding: 5px 0;
+    display: none;
+
+}
+
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+
+
+/*Fin-Cards*/
